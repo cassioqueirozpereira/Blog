@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `
         },
         '2': {
-            title: 'Conceitos Essenciais',
+            title: 'Conceitos Essenciais em POO',
             date: '31 de Agosto de 2025',
             body: `
                 <h3>Atributos</h3>
@@ -107,6 +107,145 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>A classe abstrata praticamente promove o polimorfismo, uma vez que todas as classes filhas terão os mesmos métodos, mas com lógicas diferentes.</p>
                 <h3>Benefícios da Abstração</h3>
                 <p>A abstração cria uma estrutra que padroniza o desenvolvimento das classes filhas, criando uma ordem. Melhora a organização, reutilização e manutenção</p>
+            `
+        },
+        '7': {
+            title: 'Operadores lógicos',
+            date: '31 de Agosto de 2025',
+            body: `
+                <h3>Operadores Lógicos</h3>
+                <p>Operadores lógicos são usados para combinar expressões booleanas. Eles retornam um valor booleano (True ou False) com base na combinação das expressões.</p>
+                <ul>
+                    <li><strong>and</strong> : Retorna True se ambas as expressões forem verdadeiras.</li>
+                    <li><strong>or</strong> : Retorna True se pelo menos uma das expressões for verdadeira.</li>
+                    <li><strong>not</strong> : Inverte o valor booleano da expressão.</li>
+                </ul>
+            `
+        },
+        '8': {
+            title: 'Operadores de Comparação',
+            date: '31 de Agosto de 2025',
+            body: `
+                <h3>Operadores de Comparação</h3>
+                <p>Operadores de comparação são usados para comparar dois valores. Eles retornam um valor booleano (True ou False) com base na comparação.</p>
+                <ul>
+                    <li><strong>==</strong> : Igual a</li>
+                    <li><strong>!=</strong> : Diferente de</li>
+                    <li><strong>&gt;</strong> : Maior que</li>
+                    <li><strong>&lt;</strong> : Menor que</li>
+                    <li><strong>&gt;=</strong> : Maior ou igual a</li>
+                    <li><strong>&lt;=</strong> : Menor ou igual a</li>
+                </ul>
+            `
+        },
+        '9': {
+            title: 'Condicionais',
+            date: '31 de Agosto de 2025',
+            body: `
+                <h3>Estruturas Condicionais</h3>
+                <p>Para tomar decisões no código, usamos estruturas condicionais. Elas permitem que diferentes blocos de código sejam executados com base em uma condição.</p>
+                <h3>if, elif e else</h3>
+                <p>Usamos as palavras-chave if, elif (else if) e else para criar estruturas condicionais.</p>
+                <pre><code>int idade = 20;
+
+if (idade < 18) {
+    System.out.println("Menor de idade");
+} else if (idade == 18) {
+    System.out.println("Tem exatamente 18 anos");
+} else {
+    System.out.println("Maior de idade");
+}</code></pre>
+                <h3>Switch Case</h3>
+                <p>Permite selecionar uma entre múltiplas opções com base no valor de uma variável.</p>
+                <pre><code>int numero = 2; // O valor que você quer testar
+
+switch (numero) {
+    case 1:
+        System.out.println("número igual a 1");
+        break;
+    case 2:
+        System.out.println("número igual a 2");
+        break;
+    default:
+        System.out.println("número diferente de 1 e 2");
+}</code></pre>
+                <h3>Operadores Ternários</h3>
+                <p>Uma forma simples de escrever uma expressão condicional.</p>
+                <pre><code>int idade = 20;
+String status = (idade >= 18) ? "Maior de idade" : "Menor de idade";
+System.out.println(status);</code></pre>
+            `
+        },
+        '10': {
+            title: 'Estruturas de Repetição',
+            date: '31 de Agosto de 2025',
+            body: `
+                <h3>Estruturas de Repetição</h3>
+                <p>Estruturas de repetição são usadas para executar um bloco de código várias vezes, até que uma condição seja satisfeita.</p>
+                <h3>for</h3>
+                <p>Usado quando o número de iterações é conhecido.</p>
+                <pre><code>for (int i = 0; i > 5; i++) {
+    System.out.println("Número: " + i);
+}</code></pre>
+                <h3>while</h3>
+                <p>Usado quando o número de iterações não é conhecido e depende de uma condição.</p>
+                <pre><code>int i = 0;
+while (i < 5) {
+    System.out.println("Número: " + i);
+    i++;
+}</code></pre>
+                <h3>do...while</h3>
+                <p>Semelhante ao while, mas garante que o bloco de código seja executado pelo menos uma vez.</p>
+                <pre><code>int i = 0;
+do {
+    System.out.println("Número: " + i);
+    i++;
+} while (i < 5);</code></pre>
+            `
+        },
+        '11': {
+            title: 'Arrays e Listas',
+            date: '31 de Agosto de 2025',
+            body: `
+                <h3>Arrays</h3>
+                <p>Arrays são coleções de elementos do mesmo tipo, com tamanho fixo.</p>
+                <pre><code>int[] numeros = {1, 2, 3, 4, 5};
+System.out.println(numeros[0]); // Acessa o primeiro elemento</code></pre>
+                <h3>Listas</h3>
+                <p>Listas são coleções dinâmicas que podem crescer ou diminuir de tamanho.</p>
+                <pre><code>import java.util.ArrayList;
+
+ArrayList<String> frutas = new ArrayList<>();
+
+frutas.add("Maçã");
+frutas.add("Banana");
+
+for (String fruta : frutas) {
+    System.out.println(fruta);
+}</code></pre>
+            `
+        },
+        '12': {
+            title: 'Funções',
+            date: '31 de Agosto de 2025',
+            body: `
+                <p>São blocos de código reutilizáveis que realizam uma tarefa específica.</p>
+                <pre><code>public class Calculadora {
+
+    // 'somar' é um método estático, pois pertence à classe 'Calculadora'
+    public static int somar(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int resultado = somar(5, 3);
+        System.out.println(resultado); // Imprime 8
+    }
+}</code></pre>
+                <h3>Parâmetros e Retorno</h3>
+                <p>Funções e métodos podem receber parâmetros (entradas) e retornar valores (saídas).</p>
+                <h3>Diferença de Funções e Métodos</h3>
+                <p>São basicamente iguais. Mas, as funções em java são os métodos estáticos, enquanto métodos de instância são associados a objetos.</p>
             `
         }
     };
