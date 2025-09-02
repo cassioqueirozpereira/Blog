@@ -273,3 +273,7 @@ for (String fruta : frutas) {
         bodyElement.innerHTML = '<p>O conteúdo que você procura não pôde ser carregado.</p>';
     }
 });
+
+// a tipagem dinâmica é quando uma variável pode mudar seu tipo (int, string, boolean), em tempo de execução do código. Ou seja você somente declara a variável e você pode atribuir qualquer tipo de valor e ela vai se transformar em tempo de execução.
+
+// Já a tipagem estática, como o próprio nome diz, o tipo da variável não muda, normalmente a variável já e declarada com o tipo da mesma. Porém, em algumas linguagens é possível declarar a variável sem o tipo, mas em algum momento da compilação o tipo da variável tem que ser definido através de inferencia de tipo (o valor que for adicionado a variável, o compilador deduzirá seu tipo) e não mudará mais.
