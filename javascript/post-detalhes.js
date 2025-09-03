@@ -247,6 +247,36 @@ for (String fruta : frutas) {
                 <h3>Diferença de Funções e Métodos</h3>
                 <p>São basicamente iguais. Mas, as funções em java são os métodos estáticos, enquanto métodos de instância são associados a objetos.</p>
             `
+        },
+        '13': {
+            title: 'Tipagem Estática e Dinâmica',
+            date: '31 de Agosto de 2025',
+            body: `
+                <h3>Tipagem Estática</h3>
+                <p>A tipogem estática, como o próprior nome diz, o tipo da variável não muda, normalmente a variável já é declarada com o seu respectivo tipo. Porém, em algumas linguagens de programação é possível declarar a variável sem o tipo, mas em algum momento da compilação a variável terá seu tipo definido através de inferencia de tipo (conforme o valor que a variável receber, o compilador deduzirá seu tipo) e esse tipo é fixo.</p>
+                <pre><code>// Declara uma variável do tipo inteiro.
+int idade = 30;
+
+// Exibe o valor da variável.
+System.out.println(idade);
+
+// A linha abaixo causaria um erro de compilação.
+// A variável 'idade' não pode receber um texto.
+// idade = "trinta";</code></pre>
+                <h3>Tipagem Dinâmica</h3>
+                <p>Já a tipagem dinâmica é quando uma variável pode mudar seu tipo (int, string, boolean), em tempo de execução do código. Ou seja, conforme é atribuido valores à variável, alterasse seu tipo, quantas vezes necessárias.</p>
+                <pre><code># A variável 'valor' é criada e recebe um número inteiro
+valor = 10
+print(type(valor))  # Saída: <class 'int'>
+
+# Agora a mesma variável 'valor' recebe um texto
+valor = "dez"
+print(type(valor))  # Saída: <class 'str'>
+
+# E agora, um valor booleano
+valor = True
+print(type(valor))  # Saída: <class 'bool'></code></pre>
+            `
         }
     };
 
