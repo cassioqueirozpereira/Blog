@@ -277,6 +277,16 @@ print(type(valor))  # Saída: <class 'str'>
 valor = True
 print(type(valor))  # Saída: <class 'bool'></code></pre>
             `
+        },
+        '14': {
+            title: 'Interface',
+            date: '23 de Setembro de 2025',
+            body: `
+                <h3>Interface</h3>
+                <p>É uma forma de abstração, que nomeia ações em métodos, mas não os implementa. Definindo o que suas filhas fazem "Faz o que".</p>
+                <p>Ela Faz um contrato com as classes ou interfaces que herdarem dela. Obrigando elas as implementatem os metódos ou somente copiar os metódos e adicionar novos, no Caso de ser outra interface que herda.</p>
+                <p>Uma filha pode implementar (herdar) multiplas interfaces. Mesmo em linguagesn que nao ter como herdar de multiplas class. Se tornando um diferencal. Além do fato de que quando a class é abstract só as classes que pertencem ao mesmo tipo podem herdar. Já na interface, pode herdar de tipos diferentes.</p>
+            `
         }
     };
 
