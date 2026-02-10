@@ -1,0 +1,34 @@
+API:
+    Rest:
+        Características:
+            Ter arquitetura Cliente x Servidor
+
+            Comunicação stateless: (less é um sufixo do inglês que indica quando não tem o que vem antes), ou seja, Comunicação sem estado
+            
+            Cache: É uma camada de armazenamento de dados de alta velocidade que retém um subconjunto de dados temporários. Em vez de processar uma lógica complexa ou consultar o banco de dados a cada nova requisição, o sistema verifica se já possui a resposta pronta no cache. Se houver uma correspondência (cache hit), ele entrega o dado instantaneamente; se não (cache miss), ele processa, entrega ao usuário e salva o resultado para os próximos pedidos.
+
+            1. O Servidor continua sem saber "Quem" é você (Stateless)
+
+            Quando dizemos que o REST é stateless, queremos dizer que o servidor não guarda o seu estado de sessão.
+
+                Sem Estado: O servidor não reserva um espacinho na memória dele dizendo: "O usuário 123 está na página 2 da busca e clicou no botão azul".
+
+                Cada requisição precisa ser completa por si só.
+
+            2. O Cache guarda a "Resposta", não a "Pessoa" (Cacheable)
+
+            O Cache no REST geralmente foca no Recurso.
+
+                Se 1.000 pessoas pedem a lista de "Filmes de 2015", o resultado é o mesmo para todos.
+
+                O servidor (ou um servidor de cache no meio do caminho) guarda essa lista pronta.
+
+                Quando você pede a lista, o sistema olha para o "pedido" e não para "você". Se ele já tem a resposta pronta para aquele pedido específico, ele entrega.
+
+            A grande diferença: Memória de Sessão vs. Memória de Resposta
+
+            Para facilitar, imagine um restaurante:
+
+                O "Estado" (Session State): Seria o garçom ter que lembrar que você é alérgico a camarão desde a última vez que você veio. No REST, o garçom não lembra. Você tem que dizer "Sou alérgico a camarão" em cada pedido.
+
+                o "Cache" (Response Cache): É a cozinha já ter 10 pratos de batata frita prontos porque todo mundo pede. Quando você pede batata frita, ele te entrega na hora. Ele não guardou nada sobre você, ele apenas guardou um produto que sai muito.

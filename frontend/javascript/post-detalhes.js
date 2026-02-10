@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h3>Métodos</h3>
                 <p>Métodos são as ações que um objeto pode realizar. No caso do bolo, métodos poderiam incluir pegarIngredientes(), assar(), decorar() e servir(). Get é para obter (consultar) a cor de bolo e o set permite escolher ou auterar a cor do bolo.</p>
                 <h3>Classe</h3>
+                <p> Ela serve para abstrair as coisas do mundo real. Por exemplo, uma pessoa pode ser uma classe, com atributos como nome e idade, e métodos como falar() e andar().</p>
                 <p>Pense na "receita de um bolo". Ela define os ingredientes (atributos) e as instruções para fazer um bolo (métodos), mas não é o bolo em si.</p>
                 <h3>Objeto</h3>
                 <p>O "bolo de chocolate pronto" é o objeto. Ele é a instância real da receita (classe), com um sabor e tamanho específicos, e pode ser consumido ou manipulado.</p>
